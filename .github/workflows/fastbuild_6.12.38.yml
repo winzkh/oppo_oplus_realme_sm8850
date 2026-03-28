@@ -535,7 +535,7 @@ jobs:
         run: |
           echo "skip secureguard"
           cd kernel_workspace/common
-          curl -sSL https://github.com/winzkh/kernel-workshop/raw/refs/heads/main/patch/custombl/skip_oplus_secureguard.patch | git apply
+          curl -sSL https://github.com/winzkh/kernel-workshop/raw/refs/heads/main/patch/custombl/skip_oplus_secureguard.patch | git apply --3way
 
       - name: 添加制作名称
         run: |
